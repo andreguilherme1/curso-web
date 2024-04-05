@@ -10,9 +10,9 @@ const bodyParser = require('body-parser')
 //     next()
 // })
 
-// app.get('/produtos', (req, res, next) => {
-//     res.send({nome: 'Notebook', preco: 123.45}) // Converte para JSON
-// })
+app.get('/produtos', (req, res, next) => {
+    res.send({nome: 'Notebook', preco: 123.45}) // Converte para JSON
+})
 
 // app.get('/', (req, res, next) => {
 //     res.send("<h1>Você está na página padrão</h1>")
