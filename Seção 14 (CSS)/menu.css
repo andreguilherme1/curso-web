@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(200, 200, 200);
+}
+
+header {
+    background-color: rgb(46, 46, 46);
+    display:flex;
+    justify-content: space-between;
+    border-bottom: 3px solid rgb(7, 137, 177);
+}
+
+.logoemenu {
+    display: flex;
+}
+
+.img-logo {
+    width: 200px;
+    margin: 10px;
+    height: 40px;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.menu {
+    font-family: Oswald;
+}
+
+a:link, a:visited {
+    color: white;
+    text-decoration: none;
+  }
+
+li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 3px 20px 0px 0px;
+}
+
+.autenticacao {
+    margin: 20px;
+    font-family: Oswald;
+}
+
+.autenticacao a {
+    margin: 5px;
+}
+.botao-destaque {
+    background-color: red;
+    padding: 6px 20px 6px 20px;
+    border-radius: 20px;
+}
