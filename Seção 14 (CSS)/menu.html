@@ -19,10 +19,10 @@
                     <img src="http://files.cod3r.com.br/curso-web/logo.png" alt="" class="img-logo">
                 </a>
             </div>
-            <button class="menu-toggle">
+            <button class="menu-toggle" onclick="clicar()">
                 <i class="material-icons">menu</i>
             </button>
-            <nav class="menu">
+            <nav class="menu" id="lista">
                 <ul>
                     <li>
                         <a href="#inicio">Início</a>
@@ -45,5 +45,17 @@
         </aside>
     </header>
     
+    <script>
+        var menu = document.getElementById("lista");
+        var nomes = document.getElementById("lista.ul.li");
+    
+    function clicar() {
+        if (menu.style.display === "flex") {
+            menu.style.display = "none";
+        } else {
+            menu.style.display = "flex";  // Abre o menu
+        }
+    }
+    </script>
 </body>
 </html>

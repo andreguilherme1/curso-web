@@ -17,7 +17,7 @@ header {
 
 .img-logo {
     width: 200px;
-    margin: 10px;
+    margin: 20px 0px 0px 20px;
     height: 40px;
 }
 
@@ -27,6 +27,7 @@ header {
 
 .menu {
     font-family: Oswald;
+    flex-direction: inline-block;
 }
 
 a:link, a:visited {
@@ -41,8 +42,9 @@ li {
 }
 
 .autenticacao {
-    margin: 20px;
+    margin: 25px 10px 0px 0px;
     font-family: Oswald;
+    padding: 3px 20px 0px 0px;
 }
 
 .autenticacao a {
@@ -52,4 +54,18 @@ li {
     background-color: red;
     padding: 6px 20px 6px 20px;
     border-radius: 20px;
+}
+
+@media (max-width: 750px) {
+    .logo { display : none }
+    .menu { display : none }
+    .autenticacao { display : none }
+    .menu-toggle { display : flex}
+}
+
+.menu-toggle {
+    background-color: rgb(7, 137, 177);
+    color: rgb(200, 200 , 200);
+    margin: 10px;
+    justify-content: end;
 }
