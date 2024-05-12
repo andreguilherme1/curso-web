@@ -8,6 +8,7 @@ header {
     background-color: rgb(46, 46, 46);
     display:flex;
     justify-content: space-between;
+    align-items: center;
     border-bottom: 3px solid rgb(7, 137, 177);
 }
 
@@ -17,17 +18,26 @@ header {
 
 .img-logo {
     width: 200px;
-    margin: 20px 0px 0px 20px;
+    margin: 10px 0px 0px 20px;
     height: 40px;
 }
 
 .menu-toggle {
     display: none;
+    background-color: rgb(100, 100, 100);
+    color: rgb(200, 200 , 200);
+    height: 35px;
+    margin-right: 10px;
 }
 
 .menu {
     font-family: Oswald;
     flex-direction: inline-block;
+}
+
+li:hover {
+    background-color: rgb(70, 129, 180);
+    left: auto;
 }
 
 a:link, a:visited {
@@ -38,11 +48,12 @@ a:link, a:visited {
 li {
     list-style-type: none;
     display: inline-block;
-    padding: 3px 20px 0px 0px;
+    margin: 3px 20px 0px 0px;
+    
 }
 
 .autenticacao {
-    margin: 25px 10px 0px 0px;
+    margin: 0px 10px 0px 0px;
     font-family: Oswald;
     padding: 3px 20px 0px 0px;
 }
@@ -56,16 +67,25 @@ li {
     border-radius: 20px;
 }
 
-@media (max-width: 750px) {
-    .logo { display : none }
+.menu-toggle-container {
+    justify-content: end;
+}
+
+@media (max-width: 650px) {
     .menu { display : none }
+    .menu-toggle { display : block}
+    li { display : flex }
+    .logo { justify-content: start }
+    .menu-toggle {justify-content: end }
+}
+
+@media (max-width: 800px) {
     .autenticacao { display : none }
-    .menu-toggle { display : flex}
 }
 
 .menu-toggle {
-    background-color: rgb(7, 137, 177);
+    background-color: rgb(100, 100, 100);
     color: rgb(200, 200 , 200);
     margin: 10px;
-    justify-content: end;
+    height: 35px;
 }
