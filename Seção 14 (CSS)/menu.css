@@ -28,6 +28,7 @@ header {
     color: rgb(200, 200 , 200);
     height: 35px;
     margin-right: 10px;
+    cursor: pointer;
 }
 
 .menu {

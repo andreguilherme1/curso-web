@@ -14,7 +14,7 @@
 <body>
     <header class="cabecalho">
         <div class="logoemenu">
-            <div class="logo">
+            <div class="logo" id="logo">
                 <a href="#inicio">
                     <img src="http://files.cod3r.com.br/curso-web/logo.png" alt="" class="img-logo">
                 </a>
@@ -50,12 +50,16 @@
     <script>
         var menu = document.getElementById("lista");
         var nomes = document.getElementById("lista.ul.li");
+        var logo = document.getElementById("logo");
     
     function clicar() {
         if (menu.style.display === "flex") {
-            menu.style.display = "none";
+            menu.style.display = "none"
+            logo.style.display = "block"
+            
         } else {
-            menu.style.display = "flex";  // Abre o menu
+            menu.style.display = "flex"
+            logo.style.display = "none"
         }
     }
     </script>
