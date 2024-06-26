@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Modificando HTML #03</title>
+    <link rel="stylesheet" href="css/estilo.css" />
+    <script src="js/jquery.js"></script>
+  </head>
+
+  <body class="conteudo exercicio">
+    <h1>Modificando HTML #03</h1>
+    <div id="conteudo">
+        <table>
+            <tr>
+              <th>Nome</th>
+              <th>Nota</th>
+            </tr>
+            <tr>
+              <td id="nome1"></td>
+              <td id="nome2"></td>
+              <td id></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </table>
+    </div>
+
+    
+
+    <script>
+      $(document).ready(function() {
+      const pessoas = [
+        { nome: "Ana", nota: 9.1 },
+        { nome: "Bianca", nota: 8.4 },
+        { nome: "Carlos", nota: 7.6 },
+        { nome: "Julia", nota: 9.7 },
+      ];
+
+      // Selecionar os nomes
+      const nomes = pessoas.map((pessoa) => pessoa.nome);
+
+      // Selecionar as notas
+      const notas = pessoas.map((pessoa) => pessoa.nota);
+
+      // Exibir os nomes e notas no HTML
+      $("#nomes").append('a');
+      $("#notas").append(a);
+    });
+    </script>
+  </body>
+</html>
