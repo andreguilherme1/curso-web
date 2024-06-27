@@ -15,6 +15,15 @@
     <div id='div3'>3</div>
     <div id='resultado'></div>
     <script>
-        // ...
+        const fonte = $('#div1').css('font-family') // Vê a fonte e armazena na variável
+        $('#resultado').append(`A fonte é ${fonte}`)
+
+        $('#div2').addClass('destaque') // Adiciona classe
+
+        const temClasse = $('#div2').hasClass('destaque') // Verifica se tem classe
+        $('#resultado').append(`<br>Tem classe? ${temClasse}`)
+
+        $('#div2').removeClass('destaque') // Remove uma classe
+        $('#div2').toggleClass('destaque') // Inverte, se tiver classe tira
     </script>
 </body>

@@ -23,6 +23,11 @@
     <div id='animar'>Animar!</div>
 
     <script>        
-        // ...
+        $('button').click(e => {
+            const t = 500
+            $('#animar').fadeOut(t).fadeIn(t)
+            $('#animar').hide(t).show(t)
+            $('#animar').slideUp(t).slideDown(t)
+        })
     </script>
 </body>

@@ -9,48 +9,32 @@
 
   <body class="conteudo exercicio">
     <h1>Modificando HTML #03</h1>
-    <div id="conteudo">
-        <table>
-            <tr>
-              <th>Nome</th>
-              <th>Nota</th>
-            </tr>
-            <tr>
-              <td id="nome1"></td>
-              <td id="nome2"></td>
-              <td id></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-          </table>
-    </div>
+    <div id="conteudo"></div>
 
     
 
     <script>
-      $(document).ready(function() {
-      const pessoas = [
-        { nome: "Ana", nota: 9.1 },
-        { nome: "Bianca", nota: 8.4 },
-        { nome: "Carlos", nota: 7.6 },
-        { nome: "Julia", nota: 9.7 },
-      ];
+      $(document).ready(function() { // Executa quando o document tiver pronto
+        const pessoas = [
+          { nome: 'Ana', nota: 9.1 },
+          { nome: 'Bianca', nota: 8.4 },
+          { nome: 'Carlos', nota: 7.6 },
+          { nome: 'Julia', nota: 9.7 }
+        ]
 
-      // Selecionar os nomes
-      const nomes = pessoas.map((pessoa) => pessoa.nome);
+        // Cria as linhas da tabela
+        const linhas = pessoas.map(p => { // Percorre o array
+          const tdNome = $('<td>').html(p.nome)
+          const tdNota = $('<td>').html(p.nota)
+          return $('<tr>').append(tdNome).append(tdNota)
+        })
 
-      // Selecionar as notas
-      const notas = pessoas.map((pessoa) => pessoa.nota);
+        // Insere as linhas na tabela
+        const tabela = $('<table>').append(linhas)
+          .css('border', 'solid 5px')
+        $('#conteudo').append(tabela)
+      })
 
-      // Exibir os nomes e notas no HTML
-      $("#nomes").append('a');
-      $("#notas").append(a);
-    });
     </script>
   </body>
 </html>
