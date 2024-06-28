@@ -17,6 +17,21 @@
     <p class='numero'>5</p>
 
     <script>
+<<<<<<< HEAD
         // ...
+=======
+        $('#div1').append(', 2')
+        $('#div1').prepend('0, ')
+
+        $('<span>, 3</span>').appendTo('#div1')
+        $('<span>-1, </span>').prependTo('#div1')
+
+        //$('p.numero').wrap('<div>') // Adiciona 4 e 5 em uma div
+        $('p.numero').wrapAll('<div id="div4">') // adiciona 4 e 5 em uma única div
+        $('#div4').empty() // limpa o conteúdo da div
+
+        //$('<div>Substituido</div>').replaceAll('body > p')
+        //$('div').replaceWith('<div>Substituido</div>')
+>>>>>>> 9a39bcff7986437298de5d87ed5cdaf5c07162dc
     </script>
 </body>

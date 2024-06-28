@@ -49,6 +49,29 @@
     </form>
 
     <script>
+<<<<<<< HEAD
         // ...
+=======
+        $('#feira').addClass('destaque').removeClass('destaque')
+        $('li').addClass('destaque')
+        $('[wm-obrigatorio]').removeClass('destaque')
+        $('li.opcional').removeClass('destaque')
+        $('div p span').addClass('destaque')
+
+        // Exclusivos jQuery
+
+        $('li:first').css('border', 'solid 3px black') // Primeiro
+        $('li:odd').css('border', 'solid 10px orange') // Ímpares
+        $('li:gt(1)').css('border', 'solid 10px white') // Maior do que 1
+        $('li:not(:last)').css('border', 'none') // Menos o último
+        $('li:contains("r")').css('background-color', 'black') // Contém a letra R
+
+        $('form *').hide()
+        $('form :text').show()
+        $('form :password').show()
+        $('form :checkbox').show()
+        $('form :radio').show()
+        $('form :file').show()
+>>>>>>> 9a39bcff7986437298de5d87ed5cdaf5c07162dc
     </script>
 </body>

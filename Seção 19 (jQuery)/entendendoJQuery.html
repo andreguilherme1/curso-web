@@ -12,8 +12,33 @@
     <h1>Entendendo jQuery</h1>
     <div>1</div>
     <div>2</div>
+<<<<<<< HEAD
 
     <script>
         // ...
+=======
+    <button onclick="destacar()">Destacar</button>
+
+    <script>
+        $('div').hide(5000).show(5000).fadeOut(5000).fadeIn(5000)
+
+        $.fn.fundoVerde = function() {
+            this.css("background-color", "green")
+            return this
+        }
+
+        $('body').fundoVerde()
+
+        function destacar() {
+            $('h1').destacarh1()
+        }
+
+        $.fn.destacarh1 = function() {
+            this.css("color", "red")
+            return this
+        }
+
+        
+>>>>>>> 9a39bcff7986437298de5d87ed5cdaf5c07162dc
     </script>
 </body>
